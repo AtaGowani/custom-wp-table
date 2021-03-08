@@ -5,7 +5,7 @@ data = []
 
 with open('data.csv', newline='') as csvfile:
   header = True
-  reader = csv.reader(csvfile, delimiter=',', quotechar='|')
+  reader = csv.reader(csvfile, delimiter=',', quotechar='"')
   for row in reader:
     print(row)
     if header:
